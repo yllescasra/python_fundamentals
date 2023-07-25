@@ -1,0 +1,81 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOyjkpu5wgeLEnQ0PZkCd5C",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/yllescasra/python_fundamentals/blob/main/Manipulaci%C3%B3n%20de%20Datos\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "YwHkqYYqPU5i"
+      },
+      "outputs": [],
+      "source": [
+        "total=0\n",
+        "while True:\n",
+        "    monto=float(input('Ingrese el monto de la compra:'))\n",
+        "    if monto==0:\n",
+        "        break;\n",
+        "    if monto<0:\n",
+        "        print(\"El valor infresado no es valido. \")\n",
+        "        continue;\n",
+        "    total += monto\n",
+        "    if total > 1000:\n",
+        "        total *= 0.9\n",
+        "    print(\"Total a pagar: \",total)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "minutos=0\n",
+        "costo=0\n",
+        "while True:\n",
+        "    minutos=int(input(\"Ingresa el tiempo trabajado en minutos: \"))\n",
+        "    if minutos == 0:\n",
+        "        print(\"No trabajo\")\n",
+        "        Break;\n",
+        "    if minutos<0:\n",
+        "        print(\"No valido\")\n",
+        "        continue;\n",
+        "    if minutos>480:\n",
+        "        costo=225\n",
+        "    elif minutos>60:\n",
+        "        costo=25+(15*((minutos-60)/60))\n",
+        "    elif minutos>0:\n",
+        "        costo=25\n",
+        "    else:\n",
+        "        costo=0\n",
+        "    print(\"Total a pagar \", costo)"
+      ],
+      "metadata": {
+        "id": "7ZS83D2KPXRY"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
